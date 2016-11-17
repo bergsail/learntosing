@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundProgress="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/learn_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@drawable/shape_listview"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/learn_list_src"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="70dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="ddddddd"
+            android:textColor="@color/darkslategray"
+            android:textSize="23sp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/score_num"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/green_bg"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="90"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/hint_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.example.wtz.learntosing.circle.CircleProgress
+            android:id="@+id/play_music"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/selector_btn_pause"
+            android:max="100"
+            roundProgress:Inside_Interval="2"
+            roundProgress:Paint_Color="0xff086e58"
+            roundProgress:Paint_Width="4"
+
+            roundProgress:fill="false" />
+
+        <com.example.wtz.learntosing.circle.CircleProgress
+            android:id="@+id/record"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/layer_record_music_gray"
+            android:max="100"
+            roundProgress:Inside_Interval="5"
+            roundProgress:Paint_Color="0xff086e58"
+            roundProgress:Paint_Width="4"
+            roundProgress:fill="false" />
+
+        <com.example.wtz.learntosing.circle.CircleProgress
+            android:id="@+id/play_record"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/selector_btn_play_record"
+            android:max="100"
+            roundProgress:Inside_Interval="2"
+            roundProgress:Paint_Color="0xff086e58"
+            roundProgress:Paint_Width="4"
+            roundProgress:fill="false" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
